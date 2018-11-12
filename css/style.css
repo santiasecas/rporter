@@ -1430,18 +1430,18 @@ input[type="text"] {
     ###################
 */
 
-@media (min-width: 1450px) {
+@media (min-width: 1000px) {
     .container {
-        width: 1450px;
+        width: 1080px;
     }
     .col-md-1 {
         width: 12%;
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1450px) {
     .container {
-        width: 1080px;
+        width: 1450px;
     }
     .col-md-1 {
         width: 12%;
@@ -1469,7 +1469,7 @@ h5 {
     bottom: 0px;
 }
 
-.portfolio-grid:hover .descvideo{
+.portfolio-grid:hover .descvideo {
     opacity: 0.75;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
