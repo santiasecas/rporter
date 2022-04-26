@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,8 +39,16 @@
 	<script src="js/respond.min.js"></script>
     <![endif]-->
     <script src="js/loadJS.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBEBG0Q5K9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VBEBG0Q5K9');
+    </script>
 </head>
-
 <body>
     <div class="fh5co-loader"></div>
     <div id="page">
@@ -63,56 +70,33 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
         </nav>
-
         <div class="container">
-                <div id="fh5co-contact">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h3>Información de contacto</h3>
-                            <ul class="contact-info">
-                                <li><i class="icon-location4"></i>Madrid / Valencia</li>
-                                <li><i class="icon-location3"></i><a href="mailto:hola@raquelporter.es">hola@raquelporter.es</a></li>
-                                <li><i class="icon-globe2"></i><a href="https://www.linkedin.com/in/raquelporter/">LinkedIn</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="contacto/images/contacto.jpg" class="img-responsive" alt="">
-                        </div>
+            <div id="fh5co-contact">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Información de contacto</h3>
+                        <ul class="contact-info">
+                            <li><i class="icon-location4"></i>Madrid / Valencia</li>
+                            <li><i class="icon-location3"></i><a href="mailto:hola@raquelporter.es">hola@raquelporter.es</a></li>
+                            <li><i class="icon-globe2"></i><a href="https://www.linkedin.com/in/raquelporter/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-6">
+                        <img src="contacto/images/contacto.jpg" class="img-responsive" alt="">
                     </div>
                 </div>
             </div>
-
-        <div class="container">
-            <footer id="fh5co-footer" role="contentinfo">
-                <div class="row copyright">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <small class="block">&copy; 2018 Raquel Porter. Todos los derechos reservados.</small>
-                        </p>
-                        <p>
-                            <ul class="fh5co-social-icons">
-                                <li><a href="mailto:hola@raquelporter.es"><i class="icon-mail"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/raquelporter/" target="_blank"><i class="icon-linkedin2"></i></a></li>
-                                <li><a href="https://www.instagram.com/_raquelporter/" target="_blank"><i class="icon-instagram"></i></a></li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </footer>
         </div>
-        <!-- END container -->
     </div>
-
+    <div class="footer"></div>
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
     </div>
-
+</body>
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- jQuery Easing -->
@@ -127,7 +111,10 @@
     <script src="js/sticky-kit.min.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
-
-</body>
-
+    
+    <script>
+    $(document).ready(function () {
+        $('.footer').load('./footer.html');
+    });
+    </script>
 </html>
