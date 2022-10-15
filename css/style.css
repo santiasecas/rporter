@@ -1512,3 +1512,29 @@ h5 {
 #fh5co-offcanvas ul li {
     padding-top: 20px;
 }
+
+@media (min-width: 992px) {
+    .foto_izq{
+        padding-left:0px;
+        padding-right:15px
+    }
+
+
+    .foto_der{
+        padding-left:15px;
+        padding-right:0px
+    }
+}
+
+@media (max-width: 992px) {
+    .foto_izq_s{
+        padding-left:0px;
+        padding-right:0px
+    }
+
+
+    .foto_der_s{
+        padding-left:0px;
+        padding-right:0px
+    }
+}
