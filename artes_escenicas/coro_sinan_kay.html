@@ -88,28 +88,9 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="container">
-            <footer id="fh5co-footer" role="contentinfo">
-                <div class="row copyright">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <small class="block">&copy; 2022 Raquel Porter. Todos los derechos reservados.</small>
-                        </p>
-                        <p>
-                            <ul class="fh5co-social-icons">
-                                <li><a href="mailto:hola@raquelporter.es"><i class="icon-mail"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/raquelporter/" target="_blank"><i class="icon-linkedin2"></i></a></li>
-                                <li><a href="https://www.instagram.com/_raquelporter/" target="_blank"><i class="icon-instagram"></i></a></li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <!-- END container -->
     </div>
+</body>    
+    <div class="footer"></div>
 
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
@@ -129,7 +110,12 @@
     <script src="../js/sticky-kit.min.js"></script>
     <!-- Main -->
     <script src="../js/main.js"></script>
+    
+    <script>
+    $(document).ready(function () {
+        $('.footer').load('../footer.html');
+    });
+    </script>
 
-</body>
 
 </html>

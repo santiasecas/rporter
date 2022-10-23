@@ -3,7 +3,7 @@
         <div class="row copyright">
             <div class="col-md-12 text-center">
                 <p>
-                    <small class="block">&copy; 2022 Raquel Porter. Todos los derechos reservados.</small>
+                    <small class="block">&copy; <span id='date-time'></span> Raquel Porter. Todos los derechos reservados.</small>
                 </p>
                 <p>
                     <ul class="fh5co-social-icons">
@@ -16,4 +16,9 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        var dt = new Date().getFullYear();
+        document.getElementById('date-time').innerHTML=dt;
+    </script>
 </div>
