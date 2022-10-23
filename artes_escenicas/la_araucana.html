@@ -46,37 +46,13 @@
 <body>
     <div class="fh5co-loader"></div>
     <div id="page">
-        <nav class="fh5co-nav" role="navigation">
-            <div class="container">
-                <div class="top-menu">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div id="fh5co-logo"><a href="../index.html">Raquel Porter<span> | </span>Diseño de vestuario</a></div>
-                        </div>
-                        <div class="col-sm-8 text-right menu-1">
-                            <ul>
-                                <li><a href="../index.html">Inicio</a></li>
-                                <li><a href="../bio.html">Bio</a></li>
-                                <li><a href="../artes_escenicas.html">Artes Escénicas</a></li>
-                                <li><a href="../audiovisuales.html">Audiovisuales</a></li>
-                                <li><a href="../moda.html">Moda</a></li>
-                                <li><a href="../contacto.html">Contacto</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </nav>
-
+      <nav class="navigator"></nav>
         <div id="fh5co-portfolio">
             <div class="container">
                 <div class="row nopadding">
                     <div class="col-sm-12" >
                         <div class="row">
-                            
                             <div class="col-md-6">
-                                
                                 <style type="text/css">
                                 .tg  {border-collapse:collapse;border-spacing:0;}
                                 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -89,10 +65,10 @@
                                 .tg .tg-h25s{border-color:#ffffff;font-size:16;font-weight:bold;text-align:right;vertical-align:top}
                                 .tg .tg-asdf{border-color:#ffffff;font-size:18px;text-align:center;vertical-align:top}
                                 </style>
-                                <table class="tg">
+                                <table class="tg ficha_artistica">
                                     <thead>
                                       <tr>
-                                        <th class="tg-aw21" colspan="2"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">ARAUCANA</span></th>
+                                        <th class="tg-aw21" colspan="2"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">La Araucana</span></th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -124,8 +100,6 @@
                                     </tbody>
                                 </table>
                                 
-                                
-                                
                             </div>
                             <div class="col-md-6 foto_der foto_der_s">
                                 <img src="la_araucana/foto_02.jpg" alt="" width="100%" class="portfolio-grid img-responsive">
@@ -149,6 +123,7 @@
                             <div class="col-md-12">
                                 <img src="la_araucana/foto_07.jpg" alt="" width="100%" class="portfolio-grid img-responsive">
                             </div>
+                            <div class="col-md-12 footer"></div>
                         </div>
                     </div>
                 </div>
@@ -156,31 +131,30 @@
         </div>
     </div>
 </body>
-    
-    <div class="footer"></div>
-
-    <div class="gototop js-top">
-        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-    </div>
-
-    <!-- jQuery -->
-    <script src="../js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="../js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="../js/jquery.waypoints.min.js"></script>
-    <!-- Flexslider -->
-    <script src="../js/jquery.flexslider-min.js"></script>
-    <!-- Sticky Kit -->
-    <script src="../js/sticky-kit.min.js"></script>
-    <!-- Main -->
-    <script src="../js/main.js"></script>
-
-    <script>
-    $(document).ready(function () {
-        $('.footer').load('../footer.html');
-    });
-    </script>
+<footer>
+  <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="../js/jquery.waypoints.min.js"></script>
+  <!-- Flexslider -->
+  <script src="../js/jquery.flexslider-min.js"></script>
+  <!-- Sticky Kit -->
+  <script src="../js/sticky-kit.min.js"></script>
+  <script>
+      $(document).ready(function () {
+          $('.footer').load('../footer.html');
+      });
+      $(document).ready(function () {
+          $('.navigator').load('./header.html');
+      });
+  </script>
+</footer>
 </html>

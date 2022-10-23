@@ -46,28 +46,7 @@
 <body>
     <div class="fh5co-loader"></div>
     <div id="page">
-        <nav class="fh5co-nav" role="navigation">
-            <div class="container">
-                <div class="top-menu">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div id="fh5co-logo"><a href="index.html">Raquel Porter<span> | </span>Diseño de vestuario</a></div>
-                        </div>
-                        <div class="col-sm-8 text-right menu-1">
-                            <ul>
-                                <li><a href="../index.html">Inicio</a></li>
-                                <li><a href="../bio.html">Bio</a></li>
-                                <li><a href="../artes_escenicas.html">Artes Escénicas</a></li>
-                                <li><a href="../audiovisuales.html">Audiovisuales</a></li>
-                                <li><a href="../moda.html">Moda</a></li>
-                                <li><a href="../contacto.html">Contacto</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </nav>
+        <nav class="navigator"></nav>
         <div id="fh5co-portfolio">
             <div class="row nopadding">
                 <div class="col-md-12">
@@ -90,19 +69,19 @@
                             </center>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="row">
+                        <div class="col-md-12 footer"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-    <div class="footer"></div>
-
+<footer>
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
     </div>
-
+    
     <!-- jQuery -->
     <script src="../js/jquery.min.js"></script>
     <!-- jQuery Easing -->
@@ -115,13 +94,13 @@
     <script src="../js/jquery.flexslider-min.js"></script>
     <!-- Sticky Kit -->
     <script src="../js/sticky-kit.min.js"></script>
-    <!-- Main -->
-    <script src="../js/main.js"></script>
-    
     <script>
-    $(document).ready(function () {
-        $('.footer').load('../footer.html');
-    });
+        $(document).ready(function () {
+            $('.footer').load('../footer.html');
+        });
+        $(document).ready(function () {
+            $('.navigator').load('./header.html');
+        });
     </script>
-
-</html>
+  </footer>
+  </html>
