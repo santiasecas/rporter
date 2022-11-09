@@ -1,3 +1,7 @@
+.box_ficha_artistica {
+    text-align: -webkit-center;
+}
+
 .video-responsive {
     position: relative;
     padding-bottom: 56.25%; /* 16/9 ratio */
